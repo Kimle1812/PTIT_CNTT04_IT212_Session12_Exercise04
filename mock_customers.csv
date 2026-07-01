@@ -1,0 +1,9 @@
+test_case_id,full_name,phone,email,citizen_id,expected_status,expected_error_field,expected_message
+TC-01,Nguyen Van An,0325412365,an.nguyen@gmail.com,001095012345,210,,
+TC-04,,0325412365,an.nguyen@gmail.com,001095012345,400,fullName,Họ và tên không được để trống
+TC-07,Nguyen Van An,0243123456,an.nguyen@gmail.com,001095012345,400,phone,Số điện thoại không đúng định dạng nhà mạng Việt Nam
+TC-10,Nguyen Van An,0325412365,an.nguyen@gmail.com,001095012345,400,phone,Số điện thoại này đã được đăng ký sử dụng.
+TC-12,Nguyen Van An,0325412365,an.nguyen.gmail.com,001095012345,400,email,Định dạng Email không hợp lệ
+TC-13,Nguyen Van An,0325412365,an.nguyen@gmail.com,001095012345,400,email,Địa chỉ email này đã được đăng ký sử dụng.
+TC-18,Nguyen Van An,0325412365,an.nguyen@gmail.com,000095012345,400,citizenId,Mã tỉnh/thành phố (3 số đầu) trên CCCD không hợp lệ
+TC-20,Nguyen Van An,0325412365,an.nguyen@gmail.com,001095012345,400,citizenId,Số CCCD này đã được đăng ký cho một tài khoản khác.
